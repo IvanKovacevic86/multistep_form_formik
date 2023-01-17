@@ -97,11 +97,9 @@ const FormPage = () => {
           <Button disabled={activeStep === 0} onClick={handleBack}>
             Back
           </Button>
-          {activeStep === steps.length - 1 ? (
-            <Button onClick={formik.handleSubmit}>Submit</Button>
-          ) : (
-            <Button onClick={formik.handleSubmit}>Next</Button>
-          )}
+          <Button onClick={formik.handleSubmit}>
+            {activeStep === steps.length - 1 ? "Submit" : "Next"}
+          </Button>
         </Grid>
       </Grid>
     </Box>
