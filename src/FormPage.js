@@ -50,7 +50,7 @@ const FormPage = () => {
     validationSchema: validationSchemas[activeStep],
     onSubmit: () => {
       if (activeStep === steps.length - 1) {
-        console.log("last step");
+        alert("Data submited");
       } else {
         setActiveStep((prevStep) => prevStep + 1);
       }
